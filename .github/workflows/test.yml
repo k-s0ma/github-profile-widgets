@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./
+        with:
+          output-dir: out
+          commit: "false"
+
+      - name: Check output
+        run: |
+          for name in name dots-line dots-grid clock hours-punch numbers languages; do
+            test -s "out/$name.svg" || { echo "missing: out/$name.svg"; exit 1; }
+          done
