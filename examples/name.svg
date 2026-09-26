@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="36" viewBox="0 0 480 36">
+  <style>
+    @font-face { font-family: "Widgets Sans"; font-weight: 100 900; src: url(data:font/woff2;base64,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) format("woff2"); }
+    text { font-family: "Widgets Sans", "DIN Next", "DIN Pro", "DIN 2014", Bahnschrift, "Noto Sans JP", "Noto Sans", sans-serif; }
+    .key { fill: #1f2328; } .sub { fill: #8c959f; }
+    .key-s { stroke: #1f2328; fill: none; } .sub-s { stroke: #8c959f; fill: none; }
+    .name { font-size: 26px; font-weight: 400; letter-spacing: 0.04em; }
+    .num { font-size: 28px; font-weight: 300; }
+    .label { font-size: 11px; letter-spacing: 0.08em; }
+    @media (prefers-color-scheme: dark) {
+      .key { fill: #e6edf3; } .sub { fill: #6e7681; }
+      .key-s { stroke: #e6edf3; } .sub-s { stroke: #6e7681; }
+    }
+    @keyframes fade { from { opacity: 0; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(4px); } }
+    @keyframes grow { from { transform: scaleX(0); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <text x="0" y="28" class="name key" style="animation: fade 900ms cubic-bezier(.2,.7,.2,1) 0ms both;">Soma</text>
+</svg>

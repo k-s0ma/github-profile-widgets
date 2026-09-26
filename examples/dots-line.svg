@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="12" viewBox="0 0 480 12">
+  <style>
+    text { font-family: "Widgets Sans", "DIN Next", "DIN Pro", "DIN 2014", Bahnschrift, "Noto Sans JP", "Noto Sans", sans-serif; }
+    .key { fill: #1f2328; } .sub { fill: #8c959f; }
+    .key-s { stroke: #1f2328; fill: none; } .sub-s { stroke: #8c959f; fill: none; }
+    .name { font-size: 26px; font-weight: 400; letter-spacing: 0.04em; }
+    .num { font-size: 28px; font-weight: 300; }
+    .label { font-size: 11px; letter-spacing: 0.08em; }
+    @media (prefers-color-scheme: dark) {
+      .key { fill: #e6edf3; } .sub { fill: #6e7681; }
+      .key-s { stroke: #e6edf3; } .sub-s { stroke: #6e7681; }
+    }
+    @keyframes fade { from { opacity: 0; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(4px); } }
+    @keyframes grow { from { transform: scaleX(0); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <circle cx="4.5" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 0ms both;"/>
+  <circle cx="13.6" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 16ms both;"/>
+  <circle cx="22.6" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 32ms both;"/>
+  <circle cx="31.7" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 48ms both;"/>
+  <circle cx="40.8" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 64ms both;"/>
+  <circle cx="49.8" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 80ms both;"/>
+  <circle cx="58.9" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 96ms both;"/>
+  <circle cx="67.9" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 112ms both;"/>
+  <circle cx="77" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 128ms both;"/>
+  <circle cx="86" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 144ms both;"/>
+  <circle cx="95.1" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 160ms both;"/>
+  <circle cx="104.2" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 176ms both;"/>
+  <circle cx="113.2" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 192ms both;"/>
+  <circle cx="122.3" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 208ms both;"/>
+  <circle cx="131.3" cy="6" r="2" class="key" opacity="0.43" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 224ms both;"/>
+  <circle cx="140.4" cy="6" r="2" class="key" opacity="0.50" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 240ms both;"/>
+  <circle cx="149.4" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 256ms both;"/>
+  <circle cx="158.5" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 272ms both;"/>
+  <circle cx="167.5" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 288ms both;"/>
+  <circle cx="176.6" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 304ms both;"/>
+  <circle cx="185.7" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 320ms both;"/>
+  <circle cx="194.7" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 336ms both;"/>
+  <circle cx="203.8" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 352ms both;"/>
+  <circle cx="212.8" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 368ms both;"/>
+  <circle cx="221.9" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 384ms both;"/>
+  <circle cx="230.9" cy="6" r="2" class="key" opacity="0.39" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 400ms both;"/>
+  <circle cx="240" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 416ms both;"/>
+  <circle cx="249.1" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 432ms both;"/>
+  <circle cx="258.1" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 448ms both;"/>
+  <circle cx="267.2" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 464ms both;"/>
+  <circle cx="276.2" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 480ms both;"/>
+  <circle cx="285.3" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 496ms both;"/>
+  <circle cx="294.3" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 512ms both;"/>
+  <circle cx="303.4" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 528ms both;"/>
+  <circle cx="312.5" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 544ms both;"/>
+  <circle cx="321.5" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 560ms both;"/>
+  <circle cx="330.6" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 576ms both;"/>
+  <circle cx="339.6" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 592ms both;"/>
+  <circle cx="348.7" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 608ms both;"/>
+  <circle cx="357.7" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 624ms both;"/>
+  <circle cx="366.8" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 640ms both;"/>
+  <circle cx="375.8" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 656ms both;"/>
+  <circle cx="384.9" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 672ms both;"/>
+  <circle cx="394" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 688ms both;"/>
+  <circle cx="403" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 704ms both;"/>
+  <circle cx="412.1" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 720ms both;"/>
+  <circle cx="421.1" cy="6" r="2" class="key" opacity="0.58" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 736ms both;"/>
+  <circle cx="430.2" cy="6" r="2" class="key" opacity="0.50" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 752ms both;"/>
+  <circle cx="439.2" cy="6" r="2" class="key" opacity="1.00" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 768ms both;"/>
+  <circle cx="448.3" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 784ms both;"/>
+  <circle cx="457.4" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 800ms both;"/>
+  <circle cx="466.4" cy="6" r="2" class="sub" opacity="0.35" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 816ms both;"/>
+  <circle cx="475.5" cy="6" r="2" class="key" opacity="0.43" style="animation: fade 500ms cubic-bezier(.2,.7,.2,1) 832ms both;"/>
+</svg>
