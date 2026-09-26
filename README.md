@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: k-s0ma/github-profile-widgets@main
+      - uses: k-s0ma/github-profile-widgets@v1
 ```
 
 Run it once from the **Actions** tab, then add the SVGs in `assets/` to your README:
