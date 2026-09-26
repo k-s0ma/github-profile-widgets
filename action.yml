@@ -1,0 +1,91 @@
+name: GitHub Profile Widgets
+description: Minimal SVG widgets for your GitHub profile README.
+author: k-s0ma
+branding:
+  icon: clock
+  color: gray-dark
+
+inputs:
+  github-token:
+    description: Token used to read your public activity.
+    default: ${{ github.token }}
+  user:
+    description: Target GitHub user. Defaults to the repository owner.
+    default: ${{ github.repository_owner }}
+  output-dir:
+    description: Directory to write the SVG files to.
+    default: assets
+  key-color:
+    description: Key color (data, name, numbers).
+    default: "#1f2328"
+  sub-color:
+    description: Sub color (ticks, labels, empty cells).
+    default: "#8c959f"
+  key-color-dark:
+    description: Key color in dark mode.
+    default: "#e6edf3"
+  sub-color-dark:
+    description: Sub color in dark mode.
+    default: "#6e7681"
+  timezone:
+    description: IANA time zone used for the clock and the week × hour dots.
+    default: Asia/Tokyo
+  clock-ticks:
+    description: Clock ticks. hour | 15m
+    default: 15m
+  clock-shade:
+    description: Clock cell size. hour | 15m
+    default: 15m
+  week-start:
+    description: First day of the week. sun | mon
+    default: sun
+  animation:
+    description: Play a short animation once on load. on | off
+    default: "on"
+  commit:
+    description: Commit and push the generated files. true | false
+    default: "true"
+  commit-message:
+    description: Commit message.
+    default: Update profile widgets
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+
+    - name: Install
+      shell: bash
+      working-directory: ${{ github.action_path }}
+      run: npm ci --omit=dev --no-audit --no-fund
+
+    - name: Generate widgets
+      shell: bash
+      run: node "${{ github.action_path }}/src/widgets.mjs"
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        GH_USER: ${{ inputs.user }}
+        OUT_DIR: ${{ inputs.output-dir }}
+        KEY_COLOR: ${{ inputs.key-color }}
+        SUB_COLOR: ${{ inputs.sub-color }}
+        KEY_COLOR_DARK: ${{ inputs.key-color-dark }}
+        SUB_COLOR_DARK: ${{ inputs.sub-color-dark }}
+        TIMEZONE: ${{ inputs.timezone }}
+        CLOCK_TICKS: ${{ inputs.clock-ticks }}
+        CLOCK_SHADE: ${{ inputs.clock-shade }}
+        WEEK_START: ${{ inputs.week-start }}
+        ANIMATION: ${{ inputs.animation }}
+
+    - name: Commit
+      if: inputs.commit == 'true'
+      shell: bash
+      env:
+        OUT_DIR: ${{ inputs.output-dir }}
+        MESSAGE: ${{ inputs.commit-message }}
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add "$OUT_DIR"
+        git diff --cached --quiet || (git commit -m "$MESSAGE" && git push)
