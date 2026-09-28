@@ -40,6 +40,8 @@ Run it once from the **Actions** tab, then add the SVGs in `assets/` to your REA
 <img src="assets/dots-grid.svg" />
 ```
 
+Files: `name`, `dots-line`, `dots-grid`, `numbers`, `languages`, `clock`, `hours-punch` (`.svg`).
+
 Options (colors, time zone, etc.) are listed in [action.yml](action.yml).
 
 ## License
