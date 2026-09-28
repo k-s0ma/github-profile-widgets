@@ -1,6 +1,16 @@
 {
+  "name": "github-profile-widgets",
+  "description": "Minimal SVG widgets for your GitHub profile README.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-s0ma/github-profile-widgets.git"
+  },
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "subset-font": "^2.9.0"
   }
