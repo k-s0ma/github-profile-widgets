@@ -1,4 +1,4 @@
 node_modules/
 preview.html
 /out/
-.claude/
+.claude/settings.local.json

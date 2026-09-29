@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "-e",
+        "const h=require('http'),f=require('fs'),p=require('path');h.createServer((q,r)=>{const u=decodeURIComponent(q.url.split('?')[0]);const file=p.join(process.cwd(),u==='/'?'preview.html':u);f.readFile(file,(e,d)=>{if(e){r.writeHead(404);return r.end()}r.writeHead(200,{'Content-Type':file.endsWith('.svg')?'image/svg+xml':'text/html; charset=utf-8','Cache-Control':'no-store'});r.end(d)})}).listen(5174)"
+      ],
+      "port": 5174
+    }
+  ]
+}
